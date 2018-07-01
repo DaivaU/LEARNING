@@ -1,0 +1,241 @@
+body {
+  font-family: "Helvetica Neue", Helvetiva, sans-serif;
+
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* grid */
+.container {
+  position: relative;
+  display: block;
+  margin: 0 6rem;
+}
+
+.row-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.col-1 {
+  flex: 8.33333%;
+  max-width: 8.333333%;
+}
+
+.col-2 {
+  flex: 16.66666%;
+  max-width: 16.66666%;
+}
+
+.col-3 {
+  flex: 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 33.33333%;
+  max-width: 33.33333%;
+}
+
+.col-5 {
+  flex: 41.66666%;
+  max-width: 41.66666%;
+  }
+
+.col-6 {
+  flex: 50%;
+  max-width:50%;
+}
+
+.col-7 {
+  flex: 58.33333%;
+  max-width: 58.33333%;
+}
+
+.col-8 {
+  flex: 66.66666%;
+  max-width: 66.66666%;
+}
+
+.col-9 {
+  flex: 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex: 83.33333%;
+  max-width: 83.33333%;
+}
+
+.col-11 {
+  flex: 91.66666%;
+  max-width:91.66666%;
+}
+
+.col-12 {
+  flex: 100%;
+  max-width: 100%;
+}
+
+/* paveikslu stiliai */
+img {
+  height: auto;
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+img.round {
+    border-radius: 50%;
+  }
+
+img.roundsmall {
+    border-radius: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
+    float: left;
+    margin-right: 0.3125rem;
+  }
+
+/* navigacija */
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap:wrap;
+}
+
+nav li {
+  width: 5.625rem;
+  text-align: center;
+  margin: 0.3125rem;
+}
+
+nav a {
+  text-decoration: none;
+  color:  #6800b3;
+}
+
+/* navigacijos pabaiga */
+
+/* hr stiliai */
+ hr.circle {
+  border:none;
+  border-top: 1px solid #aaa;
+  text-align: center;
+  line-height: normal;
+  overflow: visible;
+}
+
+hr.circle::after {
+  content: '\25CB';
+  display: inline-block;
+  position: relative;
+  top: -0.625rem;
+  padding: 0 0.625rem;
+  background: white;
+	color: #8c8b8b;
+	font-size: 1.125rem;
+}
+/* hr stiliu pabaiga*/
+
+
+/* awesone iconu stiliai */
+a.tweet {
+  background-color:#4fafed;
+  margin-right: 0.3125rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 5%;
+  color: white;
+  font-size: 1rem;
+}
+
+a.facebook {
+  background-color: #4361b3;
+  padding: 0.25rem 0.8125rem;
+  border-radius: 5%;
+  color: white;
+  font-size: 1rem;
+}
+
+#facebook {
+  color:#4361b3;
+  font-size: 1.5rem;
+  margin-left: 0.5rem
+}
+#twitter {
+  color:#4fafed;
+  font-size: 1.5rem;
+  margin-left: 0.5rem
+}
+
+#github {
+  color: black;
+  font-size: 1.5rem;
+  margin-left: 0.5rem
+}
+
+#medium {
+  color: green;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+#envelope {
+  color: grey;
+  font-size: 1.5rem;
+  margin-left: 0.5rem
+}
+/* awesone stiliu pabaiga */
+
+/* kiti stiliai */
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+}
